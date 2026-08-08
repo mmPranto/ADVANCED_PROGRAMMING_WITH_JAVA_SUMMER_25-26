@@ -1,7 +1,12 @@
 public class Main{
     public static void main(String[] args){
-        MyClass mc = new MyClass();
-        mc.print("Hello");
+        MyInterface mi = (p1)->{
+            System.out.println("My message "+p1);
+        };
+        mi.print("Java");
+
+        MyInterface mi2 = (p1)-> System.out.println("My Message "+p1);
+        mi2.print("C#");
     }
 }
 
