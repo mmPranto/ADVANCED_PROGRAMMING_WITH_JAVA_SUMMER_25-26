@@ -9,7 +9,7 @@ public class Producer implements Runnable{
 
     public void run(){
         int i=0;
-        while(true){
+        while(i<15){
             q.put(i++);
         }
     }
